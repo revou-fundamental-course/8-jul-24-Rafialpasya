@@ -1,5 +1,7 @@
 /* Ini css */
-
+body{
+    font-family:sans-serif;
+}
 .main-title {
     text-align: center;
 }
@@ -20,24 +22,17 @@ main {
 }
 
 form {
-    background-color: aliceblue;
+    background-color:#ececec;
     padding: 12px;
     border-radius: 8px;
 }
 
 .button {
+    background-color: rgb(61, 182, 222);
     height: 32px;
-    border-radius: 8px;
-}
-
-.submit {
-    background-color: aquamarine;
-    border: 0px;
-}
-
-.reset {
-    background-color: white;
-    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 1px solid rgb(52, 160, 197);
 }
 
 input[type=number] {
@@ -57,7 +52,17 @@ input[type=number] {
 
   .result-section {
     text-align: center;
-    background-color: aliceblue;
+    background-color:#ececec;
     border-radius: 8px;
     padding: 12px;
+  }
+
+  .general-content {
+    background-color:#ececec;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    ol li{
+        list-style: none;
+      }
   }
