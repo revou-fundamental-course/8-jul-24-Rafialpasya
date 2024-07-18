@@ -59,20 +59,38 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
     `;
         solusi.innerHTML = "Usahakan untuk menurunkan berat badan dan menerapkan pola hidup sehat dengan menjaga makan dan aktivitas fisik. Segera kunjungi dokter untuk dilakukan pemeriksaan kesehatan lanjutan untuk mengetahui risiko yang Anda miliki terkait berat badan Anda.";
     }
-    // JavaScript untuk mengatur tampilan setelah submit
 document.getElementById('bmiForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Ambil semua elemen yang perlu dikontrol tampilannya
     const leftContent = document.querySelector('.main-content.left');
     const rightContent = document.querySelector('.main-content.right');
 
-    // Tampilkan right content setelah submit
     rightContent.style.display = 'block';
 
     leftContent.style.paddingTop = '0';
     leftContent.style.paddingLeft = '0';
     leftContent.style.paddingRight = '0';
 });
+
+document.querySelector('.download').addEventListener('click', function() {
+    window.location.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+});
+
+document.querySelector('.konsultasi').addEventListener('click', function() {
+    window.location.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+});
+
+document.querySelector('.registrasi').addEventListener('click', function() {
+    window.location.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+});
+
+document.querySelector('.konsultasi-dokter').addEventListener('click', function() {
+    window.location.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+});
+
+document.querySelector('.registrasi-online').addEventListener('click', function() {
+    window.location.href = 'https://www.youtube.com/watch?v=xvFZjo5PgG0';
+});
+
 
 });

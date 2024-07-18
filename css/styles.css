@@ -97,18 +97,6 @@ input[type=number] {
     accent-color: #2600ff;
 }
 
-
-#resiko-list {
-    list-style-type: none;
-    padding-left: 0;
-    text-align: center; /* Mengatur teks di tengah */
-}
-
-#resiko-list li {
-    text-align: left; /* Mengatur teks setiap item ke kiri */
-    margin-bottom: 8px; /* Atur spasi antar item daftar */
-}
-
 .right {
     display: none;
 }
@@ -118,8 +106,4 @@ input[type=number] {
     padding-left: 400px;
     padding-right: 400px;
 
-}
-
-.main-content {
-    width: 80%; /* Contoh menggunakan persen (%) untuk lebar */
 }
