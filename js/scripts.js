@@ -3,9 +3,11 @@
 document.getElementById('bmiForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
+    // mengambil nilai input dari formulir
     const tinggi = parseFloat(document.getElementById('input-tinggi-badan').value) / 100;
     const beratBadan = parseFloat(document.getElementById('input-berat-badan').value);
     const usia = parseInt(document.getElementById('input-usia').value);
+    // mengambil elemen di HTML
     const hasilElement = document.getElementById('hasil');
     const penjelasan = document.getElementById('penjelasan');
     const penjelasan2 = document.getElementById('penjelasan2');
@@ -13,9 +15,11 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
     const resiko = document.getElementById('resiko');
     const solusi = document.getElementById('solusi');
 
+    // rumus BMI
     const BMI = beratBadan / (tinggi * tinggi);
     hasilElement.innerHTML = BMI.toFixed(2);
 
+    // jika, ketika kekurangan berat bedan
     if (BMI < 18.5) {
         hasilbmi.innerHTML = "< 18.5";
         penjelasan.innerHTML = "Kekurangan berat badan";
@@ -27,6 +31,8 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
         <br>Sistem kekebalan tubuh yang lemah
     `;
         solusi.innerHTML = "Hubungi dokter lebih lanjut mengenai pola makan dan gizi yang baik untuk meningkatkan kesehatan.";
+
+        // lain jika, berarti normal
     } else if (BMI >= 18.5 && BMI <= 24.9) {
         hasilbmi.innerHTML = "18.5 - 24.9";
         penjelasan.innerHTML = "Berat badan yang normal";
@@ -36,6 +42,8 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
         <br>Good job!!
     `;
         solusi.innerHTML = "Tetap pertahankan berat badan Anda dan jaga berat badan Anda dengan mengatur keseimbangan antara pola makan dan aktivitas fisik Anda.";
+
+        // lain jika, berarti berat badan berlebih
     } else if (BMI >= 25.0 && BMI <= 29.9) {
         hasilbmi.innerHTML = "25.0 - 29.9";
         penjelasan.innerHTML = "Overweight atau berat badan berlebih";
@@ -47,6 +55,8 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
         <br>Osteoarthritis
     `;
         solusi.innerHTML = "Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini, maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.";
+
+        // jika tidak, maka obesitas
     } else {
         hasilbmi.innerHTML = "> 29.9";
         penjelasan.innerHTML = "Obesitas";
@@ -62,6 +72,7 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
 document.getElementById('bmiForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
+    // tampilan awal hanya konten kiri, ketika Submit beberapa elemen akan di hapus
     const leftContent = document.querySelector('.main-content.left');
     const rightContent = document.querySelector('.main-content.right');
 

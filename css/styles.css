@@ -97,10 +97,12 @@ input[type=number] {
     accent-color: #2600ff;
 }
 
+/* tampilan kanan hilang */
 .right {
     display: none;
 }
 
+/* tampilan kiri ketika kanan hilang */
 .left {
     padding-top: 12px;
     padding-left: 400px;
