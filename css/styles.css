@@ -4,12 +4,16 @@
 body{
     font-family: "Lato", sans-serif;
     text-align: justify;
-    
+    ol {
+        margin: 15px;
+        padding: 0;
+    }
 
 }
     
 .judul{
     text-align: left;
+    font-weight: bold;
 }
 
 .main-title {
@@ -71,7 +75,6 @@ form {
     border: 1px solid rgb(216, 216, 216);
 }
 
-
 /* tampilan input nomor */
 input[type=number] {
     width: 100%;
@@ -82,10 +85,41 @@ input[type=number] {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+    border-radius: 8px;
   }
   
   input[type=number]:focus {
     border: 3px solid #555;
   }
 
- 
+/* tampilan radio */
+.container {
+    accent-color: #2600ff;
+}
+
+
+#resiko-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center; /* Mengatur teks di tengah */
+}
+
+#resiko-list li {
+    text-align: left; /* Mengatur teks setiap item ke kiri */
+    margin-bottom: 8px; /* Atur spasi antar item daftar */
+}
+
+.right {
+    display: none;
+}
+
+.left {
+    padding-top: 12px;
+    padding-left: 400px;
+    padding-right: 400px;
+
+}
+
+.main-content {
+    width: 80%; /* Contoh menggunakan persen (%) untuk lebar */
+}
